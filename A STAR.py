@@ -111,7 +111,7 @@ for i in range(n):
     node,h=map(str,input().split())
     H_dist[node]=float(h)
 
-start, end = map(str, input().split())
+start, end = map(str, input("Enter start and end point like (A Z) : ").split())
 print(H_dist)
 
    
