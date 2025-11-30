@@ -110,10 +110,12 @@ for i in range(e):
 for i in range(n):
     node,h=map(str,input().split())
     H_dist[node]=float(h)
+
+start, end = map(str, input().split())
 print(H_dist)
 
    
 Graph_nodes=graph
 print(graph)
-aStarAlgo('S', 'G')
+aStarAlgo(start, end)
 
