@@ -45,8 +45,7 @@ def aStarAlgo(start_node, stop_node):
                             closed_set.remove(m)
                             open_set.add(m)
         if n == None:
-            TYPE THE CODE HERE TO PRINT AS Path does not exist!
-            
+            print("Path does not exist!")
             return None
         
         # if the current node is the stop_node
@@ -70,7 +69,7 @@ def aStarAlgo(start_node, stop_node):
 #define fuction to return neighbor and its distance
 #from the passed node
 def get_neighbors(v):
-       """
+    """
     Retrieves a value from the Graph_nodes dictionary based on the provided key.
 
     Parameters:
@@ -80,13 +79,14 @@ def get_neighbors(v):
     Returns:
     The value associated with the key `v` in the Graph_nodes dictionary if the key exists; 
     otherwise, returns None.
-    TYPE THE CODE HERE BY REFERRING TO THE ABOVE DESCRIPTION
     """
+    return Graph_nodes.get(v, None)
+
 def heuristic(n):
     return H_dist[n]
 
 
-#Describe your graph here
+# graph
 '''Graph_nodes = {
     'A': [('B', 6), ('F', 3)],
     'B': [('A', 6), ('C', 3), ('D', 2)],
